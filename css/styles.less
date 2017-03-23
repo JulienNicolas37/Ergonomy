@@ -21,7 +21,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
 }
 
 .main-bar-icon {
@@ -41,15 +40,29 @@
     }
 }
 
+#container-indicator {
+    border-color: transparent;
+    border-bottom-color: blue;
+    border-style: dashed dashed solid;
+    border-width: 0 8.5px 8.5px;
+    position: absolute;
+    left: 6.5px;
+    top: 37px;
+    z-index: 1;
+    height: 0;
+    width: 0;
+}
+
 #apps-menu-container {
     display: flex;
     flex-direction: row;
     height: 300px;
-    width: 300px;
+    width: 400px;
     background: white;
-    border: 1px solid black;
     position: absolute;
     top: 68px;
+    border: 1px solid gray;
+    box-shadow: 0 5px 5px 0 gray;
     right:10px;
 
     ul {
@@ -62,8 +75,51 @@
             vertical-align: top;
             color: black;
             z-index: 999;
-            height: 98px;
-            width: 86px;        }
+            height: 100px;
+            width: 100px;
+            border: solid 1px white;
+
+            &:hover {
+                border: solid 1px grey;
+            }
+
+            a{
+                text-decoration: none;
+                font-size: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: black;
+            }
+            .menu-app-title {
+                padding-top:10px;
+            }
+            .menu-app-img {
+                display: inline-block;
+                vertical-align: top;
+                height: 64px;
+                width: 64px;
+                background-size: 64px 64px;
+            }
+            .menu-app-img.img-account {
+                background-image: url("../img/accounting-apps.svg");
+            }
+            .menu-app-img.img-manuf {
+                background-image: url("../img/manufacturing-apps.svg");
+            }
+            .menu-app-img.img-facility {
+                background-image: url("../img/facility-apps.svg");
+            }
+            .menu-app-img.img-srm {
+                background-image: url("../img/srm-apps.svg");
+            }
+            .menu-app-img.img-crm {
+                background-image: url("../img/srm-apps.svg");
+            }
+            .menu-app-img.img-hr {
+                background-image: url("../img/hr-apps.svg");
+            }
+        }
     }
 }
 
