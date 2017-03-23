@@ -1,0 +1,111 @@
+@nereidedark: #0A5A83;
+@nereidelight: #0095D0;
+
+#main-bar {
+    height: 56px;
+    width:100%;
+    background: #0095d0;
+    position: fixed;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.main-bar-icon {
+    padding-right:10px;
+}
+#apps-menu-button {
+    height: 27px;
+    width: 27px;
+    &:hover {
+        cursor: hand;
+    }
+}
+
+#apps-menu-container {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 300px;
+    background: white;
+    border: 1px solid black;
+    position: absolute;
+    top: 68px;
+    right:10px;
+
+    ul {
+        display:block;
+        padding : 28px;
+        text-align: left;
+        li {
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            color: black;
+            z-index: 999;
+            height: 98px;
+            width: 86px;        }
+    }
+}
+
+#profile-button {
+    img {
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+
+#left-slide {
+    background: #f2f2f2 none repeat scroll 0 0;
+    bottom: 0;
+    color: #616161;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 12px 8px 52px;
+    position: absolute;
+    top: 0;
+    left:-210px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    white-space: nowrap;
+    width: 220px;
+}
+#left-slide:hover {
+ left: 0;
+}
+
+#in-app-menu {
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    list-style: outside none none;
+    padding: 0 0 8px;
+    position: relative;
+    line-height: 40px;
+}
+
+#in-app-menu > li {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    color: @nereidelight;
+    font-weight: bold;
+    padding-left: 16px;
+    padding-right: 12px;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+}
+
+#in-app-menu > li:hover {
+    background: @nereidedark;
+    color: white;
+    text-shadow: none;
+    width: 100%;
+}
+#in-app-menu > li:hover > a {
+    text-decoration: none;
+    color: #b3d4fc;
+}
