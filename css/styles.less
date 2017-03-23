@@ -5,15 +5,33 @@
     height: 56px;
     width:100%;
     background: #0095d0;
-    position: fixed;
     top:0;
+}
+
+#left-bar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#right-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
 }
+
 .main-bar-icon {
     padding-right:10px;
+    padding-left:10px;
+    padding-top:10px;
+    &:hover {
+        cursor: pointer;
+    }
+
 }
 #apps-menu-button {
     height: 27px;
@@ -55,6 +73,17 @@
         border-radius: 50%;
     }
 }
+#component-menu-button {
+    opacity: 0.75;
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+     img {
+         height: 40px;
+         border-radius: 50%;
+     }
+ }
 
 #left-slide {
     background: #f2f2f2 none repeat scroll 0 0;
@@ -64,22 +93,27 @@
     overflow: hidden;
     padding: 12px 8px 52px;
     position: absolute;
-    top: 0;
-    left:-210px;
+    top: 56px;
+    white-space: nowrap;
+    width: 210px;
+}
+.slide-hide {
+    left:-230px;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
-    white-space: nowrap;
-    width: 220px;
 }
-#left-slide:hover {
- left: 0;
+.fade {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 #in-app-menu {
-    border-bottom: 1px solid #ddd;
     box-sizing: border-box;
     list-style: outside none none;
     padding: 0 0 8px;
@@ -88,7 +122,6 @@
 }
 
 #in-app-menu > li {
-    background-color: rgba(0, 0, 0, 0.05);
     border-radius: 2px;
     color: @nereidelight;
     font-weight: bold;

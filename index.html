@@ -17,54 +17,63 @@
     </head>
     <body>
         <div id="main-bar">
-            <div id="apps-menu-button" class="main-bar-icon">
-                <img src="img/apps-icon.svg"/>
-                <div id="apps-menu-container">
-                    <ul id="apps-menu">
-                        <li>
-                            <a href="#accounting">
-                                <span class="menu-app-img img-account"></span>
-                                <span class="menu-app-title">Accounting</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#accounting">
-                                <span class="menu-app-img img-account"></span>
-                                <span class="menu-app-title">Manufactoring</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#accounting">
-                                <span class="menu-app-img img-account"></span>
-                                <span class="menu-app-title">SRM</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#accounting">
-                                <span class="menu-app-img img-account"></span>
-                                <span class="menu-app-title">CRM</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#accounting">
-                                <span class="menu-app-img img-account"></span>
-                                <span class="menu-app-title">Facility</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#accounting">
-                                <span class="menu-app-img img-account"></span>
-                                <span class="menu-app-title">HR</span>
-                            </a>
-                        </li>
-                    </ul>
+            <div id="left-bar">
+                <div id="component-menu-button" class="main-bar-icon">
+                    <img src="img/component-icon.svg" onClick="var div = document.getElementById('left-slide');
+div.classList.contains('slide-hide') ? div.classList.remove('slide-hide') : div.classList.add('slide-hide')"/>
                 </div>
             </div>
-            <div id="profile-button" class="main-bar-icon">
-                <img src="img/profile.jpeg"/>
+            <div id="right-bar">
+                <div id="apps-menu-button" class="main-bar-icon">
+                    <img src="img/apps-icon.svg"/>
+                    <div id="apps-menu-container">
+                        <ul id="apps-menu">
+                            <li>
+                                <a href="#accounting">
+                                    <span class="menu-app-img img-account"></span>
+                                    <span class="menu-app-title">Accounting</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accounting">
+                                    <span class="menu-app-img img-account"></span>
+                                    <span class="menu-app-title">Manufactoring</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accounting">
+                                    <span class="menu-app-img img-account"></span>
+                                    <span class="menu-app-title">SRM</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accounting">
+                                    <span class="menu-app-img img-account"></span>
+                                    <span class="menu-app-title">CRM</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accounting">
+                                    <span class="menu-app-img img-account"></span>
+                                    <span class="menu-app-title">Facility</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accounting">
+                                    <span class="menu-app-img img-account"></span>
+                                    <span class="menu-app-title">HR</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="profile-button" class="main-bar-icon">
+                    <img src="img/profile.jpeg"/>
+                </div>
             </div>
         </div>
-        <div id="left-slide">
+        <div id="left-slide" class="fade slide-hide">
+
             <ul id="in-app-menu">
                 <li><a href="index.html">Main</a></li>
                 <li>Parties</li>
