@@ -24,57 +24,59 @@ div.classList.contains('slide-hide') ? div.classList.remove('slide-hide') : div.
                 </div>
             </div>
             <div id="right-bar">
-                <div id="apps-menu-button" class="main-bar-icon">
+                <div id="apps-menu-button" class="main-bar-icon" onClick="var div = document.getElementById('apps-menu-main-container');
+div.classList.contains('hide') ? div.classList.remove('hide') : div.classList.add('hide')">
                     <img src="img/apps-icon.svg"/>
-                    <div id="container-indicator"></div>
-                    <div id="apps-menu-container">
-                        <ul id="apps-menu">
-                            <li>
-                                <a href="#accounting">
-                                    <span class="menu-app-img img-account"></span>
-                                    <span class="menu-app-title">Accounting</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#manufacturing">
-                                    <span class="menu-app-img img-manuf"></span>
-                                    <span class="menu-app-title">Manufacturing</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#srm">
-                                    <span class="menu-app-img img-srm"></span>
-                                    <span class="menu-app-title">SRM</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#crm">
-                                    <span class="menu-app-img img-crm"></span>
-                                    <span class="menu-app-title">CRM</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#facility">
-                                    <span class="menu-app-img img-facility"></span>
-                                    <span class="menu-app-title">Facility</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#hr">
-                                    <span class="menu-app-img img-hr"></span>
-                                    <span class="menu-app-title">HR</span>
-                                </a>
-                            </li>
-                        </ul>
+                    <div id="apps-menu-main-container" class="hide">
+                        <div id="container-indicator"></div>
+                        <div id="apps-menu-container">
+                            <ul id="apps-menu">
+                                <li>
+                                    <a href="#accounting">
+                                        <span class="menu-app-img img-account"></span>
+                                        <span class="menu-app-title">Accounting</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#manufacturing">
+                                        <span class="menu-app-img img-manuf"></span>
+                                        <span class="menu-app-title">Manufacturing</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#srm">
+                                        <span class="menu-app-img img-srm"></span>
+                                        <span class="menu-app-title">SRM</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#crm">
+                                        <span class="menu-app-img img-crm"></span>
+                                        <span class="menu-app-title">CRM</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#facility">
+                                        <span class="menu-app-img img-facility"></span>
+                                        <span class="menu-app-title">Facility</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#hr">
+                                        <span class="menu-app-img img-hr"></span>
+                                        <span class="menu-app-title">HR</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div id="profile-button" class="main-bar-icon">
-                    <img src="img/profile.jpeg"/>
+                    <img src="img/profile.svg"/>
                 </div>
             </div>
         </div>
         <div id="left-slide" class="fade slide-hide">
-
             <ul id="in-app-menu">
                 <li><a href="index.html">Main</a></li>
                 <li>Parties</li>

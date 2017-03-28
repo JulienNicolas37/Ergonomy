@@ -1,6 +1,10 @@
 @nereidedark: #0A5A83;
 @nereidelight: #0095D0;
 
+body {
+    background : rgba(0,0,0,.2);
+}
+
 #main-bar {
     height: 56px;
     width:100%;
@@ -21,6 +25,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .main-bar-icon {
@@ -35,6 +40,9 @@
 #apps-menu-button {
     height: 27px;
     width: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &:hover {
         cursor: hand;
     }
@@ -42,15 +50,22 @@
 
 #container-indicator {
     border-color: transparent;
-    border-bottom-color: blue;
+    border-bottom-color: white;
     border-style: dashed dashed solid;
     border-width: 0 8.5px 8.5px;
-    position: absolute;
-    left: 6.5px;
-    top: 37px;
-    z-index: 1;
+    position: relative;
+    top: 17px;
+    z-index: 2;
     height: 0;
     width: 0;
+}
+
+.hide {
+    display:none;
+}
+
+.app-bar-icon {
+
 }
 
 #apps-menu-container {
@@ -61,9 +76,10 @@
     background: white;
     position: absolute;
     top: 68px;
-    border: 1px solid gray;
+    border: 1px solid rgba(0,0,0,.2);
     box-shadow: 0 5px 5px 0 gray;
     right:10px;
+    z-index: 1;
 
     ul {
         display:block;
@@ -129,15 +145,15 @@
         border-radius: 50%;
     }
 }
-#component-menu-button {
-    opacity: 0.75;
-    &:hover {
-        opacity: 1;
-        cursor: pointer;
-    }
+.main-bar-icon {
      img {
          height: 40px;
-         border-radius: 50%;
+         opacity: 0.75;
+
+         &:hover {
+             opacity: 1;
+             cursor: pointer;
+         }
      }
  }
 
