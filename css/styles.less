@@ -1,12 +1,15 @@
 @nereidedark: #0A5A83;
 @nereidelight: #0095D0;
 
+@main-bar-height : 50px;
+@footer-height: 36px;
+
 body {
     background : rgba(0,0,0,.2);
 }
 
 #main-bar {
-    height: 56px;
+    height: @main-bar-height;
     width:100%;
     background: #0095d0;
     top:0;
@@ -36,6 +39,10 @@ body {
         cursor: pointer;
     }
 
+    img {
+        height: 100% !important;
+    }
+
 }
 #apps-menu-button {
     height: 27px;
@@ -48,7 +55,7 @@ body {
     }
 }
 
-#container-indicator {
+.container-indicator {
     border-color: transparent;
     border-bottom-color: white;
     border-style: dashed dashed solid;
@@ -64,10 +71,6 @@ body {
     display:none;
 }
 
-.app-bar-icon {
-
-}
-
 #apps-menu-container {
     display: flex;
     flex-direction: row;
@@ -75,7 +78,7 @@ body {
     width: 400px;
     background: white;
     position: absolute;
-    top: 68px;
+    top: @main-bar-height + 13px;
     border: 1px solid rgba(0,0,0,.2);
     box-shadow: 0 5px 5px 0 gray;
     right:10px;
@@ -147,7 +150,7 @@ body {
 }
 .main-bar-icon {
      img {
-         height: 40px;
+         height: 20px;
          opacity: 0.75;
 
          &:hover {
@@ -165,7 +168,7 @@ body {
     overflow: hidden;
     padding: 12px 8px 52px;
     position: absolute;
-    top: 56px;
+    top: @main-bar-height;
     white-space: nowrap;
     width: 210px;
 }
@@ -213,4 +216,29 @@ body {
 #in-app-menu > li:hover > a {
     text-decoration: none;
     color: #b3d4fc;
+}
+
+#pre-footer {
+    height: @footer-height;
+}
+#footer {
+    position: absolute;
+    bottom:0;
+    height: @footer-height;
+    width: 100%;
+    background-color: @nereidelight;
+    color:white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img {
+        background-color: @nereidelight;
+        border-radius: 50%;
+        position: relative;
+        height: @footer-height + 10px;
+        top: -10px;
+        padding: 6px;
+    }
 }
