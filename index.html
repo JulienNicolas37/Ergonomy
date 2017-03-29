@@ -71,8 +71,19 @@ div.classList.contains('hide') ? div.classList.remove('hide') : div.classList.ad
                         </div>
                     </div>
                 </div>
-                <div id="profile-button" class="main-bar-icon">
+                <div id="profile-button" class="main-bar-icon" onClick="var div = document.getElementById('apps-menu-profile-container');
+div.classList.contains('hide') ? div.classList.remove('hide') : div.classList.add('hide')">
                     <img src="img/profile.svg"/>
+                    <div id="apps-menu-profile-container" class="hide">
+                        <div class="container-indicator"></div>
+                        <div id="profile-menu-container">
+                            <ul id="profile-menu">
+                                <li><a href="#user-profile">Profile</a></li>
+                                <li><a href="#user-settings">Settings</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -86,6 +97,14 @@ div.classList.contains('hide') ? div.classList.remove('hide') : div.classList.ad
                 <li>Logged-in Users</li>
             </ul>
         </div>
+
+        <div id="pre-footer"></div>
+        <div id="footer">
+            <span>Apache OFBiz</span>
+            <img src="img/logo-nereide.svg">
+            <span>UI by Néréide 2017</span>
+        </div>
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
