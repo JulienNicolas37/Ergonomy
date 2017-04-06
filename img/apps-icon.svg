@@ -25,16 +25,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="348.45482"
-     inkscape:cy="304.48044"
+     inkscape:zoom="2.8"
+     inkscape:cx="-11.952868"
+     inkscape:cy="107.88018"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
-     inkscape:window-x="0"
+     inkscape:window-x="1920"
      inkscape:window-y="27"
      inkscape:window-maximized="1" />
   <metadata
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,9 +55,9 @@
      id="layer1"
      transform="translate(0,-1025.3622)">
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#0b5d88;stroke-width:0.01179901;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 0.0058995,1025.3681 0,7.3784 7.3783427,0 0,-7.3784 -7.3783427,0 z m 9.8048954,0 0,7.3784 7.3783431,0 0,-7.3784 -7.3783431,0 z m 9.8048951,0 0,7.3784 7.37841,0 0,-7.3784 -7.37841,0 z m -19.6097905,9.805 0,7.3783 7.3783427,0 0,-7.3783 -7.3783427,0 z m 9.8048954,0 0,7.3783 7.3783431,0 0,-7.3783 -7.3783431,0 z m 9.8048951,0 0,7.3783 7.37841,0 0,-7.3783 -7.37841,0 z m -19.6097905,9.8048 0,7.3784 7.3783427,0 0,-7.3784 -7.3783427,0 z m 9.8048954,0 0,7.3784 7.3783431,0 0,-7.3784 -7.3783431,0 z m 9.8048951,0 0,7.3784 7.37841,0 0,-7.3784 -7.37841,0 z"
-       id="rect4824"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.05999994;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -9.5367437e-7,1025.3622 0,7.4629 7.46289095367437,0 0,-7.4629 -7.46289095367437,0 z m 9.76953085367437,0 0,7.4629 7.4628911,0 0,-7.4629 -7.4628911,0 z m 9.7675781,0 0,7.4629 7.462891,0 0,-7.4629 -7.462891,0 z m -19.53710895367437,9.7695 0,7.4629 7.46289095367437,0 0,-7.4629 -7.46289095367437,0 z m 9.76953085367437,0 0,7.4629 7.4628911,0 0,-7.4629 -7.4628911,0 z m 9.7675781,0 0,7.4629 7.462891,0 0,-7.4629 -7.462891,0 z m -19.53710895367437,9.7696 0,7.4609 7.46289095367437,0 0,-7.4609 -7.46289095367437,0 z m 9.76953085367437,0 0,7.4609 7.4628911,0 0,-7.4609 -7.4628911,0 z m 9.7675781,0 0,7.4609 7.462891,0 0,-7.4609 -7.462891,0 z"
+       id="rect4242"
        inkscape:connector-curvature="0" />
   </g>
 </svg>
