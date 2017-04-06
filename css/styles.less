@@ -2,67 +2,63 @@
 @nereidelight: #0095D0;
 
 @main-bar-height : 50px;
-@footer-height: 36px;
+@footer-height: 25px;
 
 body {
     background : rgba(0,0,0,.2);
 }
 
 #main-bar {
-    height: @main-bar-height;
+    height:@main-bar-height;
     width:100%;
     background: #0095d0;
     top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#left-bar {
-    position: fixed;
-    top: 0;
+.main-bar {
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
-#right-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
 
 .main-bar-icon {
     padding-right:10px;
     padding-left:10px;
-    padding-top:10px;
-    &:hover {
-        cursor: pointer;
-    }
-
-    img {
-        height: 100% !important;
-    }
-
-}
-#apps-menu-button {
-    height: 27px;
-    width: 27px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
     &:hover {
-        cursor: hand;
+        opacity: 1;
+        cursor: pointer;
+    }
+    img {
+        height: 100%;
     }
 }
 
+.icon-mini {
+    height: 30% !important;
+}
+
+#apps-menu-main-container {
+    position: absolute;
+    top: 27px;
+}
 .container-indicator {
     border-color: transparent;
     border-bottom-color: white;
     border-style: dashed dashed solid;
     border-width: 0 8.5px 8.5px;
-    position: relative;
-    top: 17px;
     z-index: 2;
+    position: relative;
+    top: 20px;
     height: 0;
     width: 0;
 }
@@ -78,10 +74,10 @@ body {
     width: 400px;
     background: white;
     position: absolute;
-    top: @main-bar-height + 13px;
+    top: @main-bar-height - 25px;
+    right:-50px;
     border: 1px solid rgba(0,0,0,.2);
     box-shadow: 0 5px 5px 0 gray;
-    right:10px;
     z-index: 1;
 
     ul {
@@ -142,23 +138,9 @@ body {
     }
 }
 
-#profile-button {
-    img {
-        height: 40px;
-        border-radius: 50%;
-    }
+.icon-circle {
+    border-radius: 50%;
 }
-.main-bar-icon {
-     img {
-         height: 20px;
-         opacity: 0.75;
-
-         &:hover {
-             opacity: 1;
-             cursor: pointer;
-         }
-     }
- }
 
 #left-slide {
     background: #f2f2f2 none repeat scroll 0 0;
