@@ -29,7 +29,7 @@ div.classList.contains('hide') ? div.classList.remove('hide') : div.classList.ad
                     <img src="img/apps-icon.svg"  class=" "/>
                     <div id="apps-menu-main-container" class="hide">
                         <div class="container-indicator"></div>
-                        <div id="apps-menu-container">
+                        <div id="apps-menu-container" class="main-bar-menu-container">
                             <ul id="apps-menu">
                                 <li>
                                     <a href="#accounting">
@@ -76,11 +76,18 @@ div.classList.contains('hide') ? div.classList.remove('hide') : div.classList.ad
                     <img src="img/profile.svg" class="icon-circle"/>
                     <div id="apps-menu-profile-container" class="hide">
                         <div class="container-indicator"></div>
-                        <div id="profile-menu-container">
-                            <ul id="profile-menu">
-                                <li><a href="#user-profile">Profile</a></li>
-                                <li><a href="#user-settings">Settings</a></li>
-                            </ul>
+                        <div id="profile-menu-container" class="main-bar-menu-container">
+                            <div class="flex-row">
+                                <span class="column-20"></span>
+                                <ul class="column-80">
+                                    <li id="profile-name">Pierre DUPONT</li>
+                                    <li><a href="#user-profile">Profile</a></li>
+                                    <li><a href="#user-settings">Settings</a></li>
+                                </ul>
+                            </div>
+                            <div id="profile-bottom-section">
+                                <a href="#logout">Déconnexion</a>
+                            </div>
                         </div>
                     </div>
                 </div>
