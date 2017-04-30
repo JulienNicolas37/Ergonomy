@@ -1,17 +1,77 @@
-@nereidedark: #0A5A83;
-@nereidelight: #0095D0;
+@color-nrd-dark: #0A5A83;
+@color-nrd-light: #0095D0;
+@color-nrd-lighter: #b3d4fc;
+
+@color-theme-dark: @color-nrd-dark;
+@color-theme-light: @color-nrd-light;
+@color-theme-lighter: @color-nrd-lighter;
+@color-grey-light: #f2f2f2;
+@color-grey-dark: #cccccc;
+
+@color-font-std: #000;
+@color-font-theme-light: @color-theme-light ;
+@color-font-theme-dark: @color-theme-dark ;
 
 @main-bar-height : 50px;
 @footer-height: 25px;
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.column-10 {
+    display: flex;
+    width: 10%;
+}
+.column-20 {
+    display: flex;
+    width: 20%;
+}
+.column-30 {
+    display: flex;
+    width: 30%;
+}
+.column-40 {
+    display: flex;
+    width: 40%;
+}
+.column-50 {
+    display: flex;
+    width: 50%;
+}
+.column-60 {
+    display: flex;
+    width: 60%;
+}
+.column-70 {
+    display: flex;
+    width: 70%;
+}
+.column-80 {
+    display: flex;
+    width: 80%;
+}
+.column-90 {
+    display: flex;
+    width: 90%;
+}
+.column-100 {
+    display: flex;
+    width: 100%;
+}
+
 body {
-    background : rgba(0,0,0,.2);
+    background : @color-grey-light;
 }
 
 #main-bar {
     height:@main-bar-height;
     width:100%;
-    background: #0095d0;
+    background: @color-theme-light;
     top:0;
     display: flex;
     flex-direction: row;
@@ -95,7 +155,7 @@ body {
             border: solid 1px white;
 
             &:hover {
-                border: solid 1px grey;
+                border: solid 1px @color-grey-dark;
             }
 
             a{
@@ -143,9 +203,9 @@ body {
 }
 
 #left-slide {
-    background: #f2f2f2 none repeat scroll 0 0;
+    background: @color-grey-light none repeat scroll 0 0;
     bottom: 0;
-    color: #616161;
+    color: @color-grey-dark;
     line-height: 40px;
     overflow: hidden;
     padding: 12px 8px 52px;
@@ -180,7 +240,7 @@ body {
 
 #in-app-menu > li {
     border-radius: 2px;
-    color: @nereidelight;
+    color: @color-theme-light;
     font-weight: bold;
     padding-left: 16px;
     padding-right: 12px;
@@ -190,7 +250,7 @@ body {
 }
 
 #in-app-menu > li:hover {
-    background: @nereidedark;
+    background: @color-theme-dark;
     color: white;
     text-shadow: none;
     width: 100%;
@@ -208,7 +268,7 @@ body {
     bottom:0;
     height: @footer-height;
     width: 100%;
-    background-color: @nereidelight;
+    background-color: @color-theme-light;
     color:white;
     font-weight: bold;
     display: flex;
@@ -216,7 +276,7 @@ body {
     justify-content: center;
     align-items: center;
     img {
-        background-color: @nereidelight;
+        background-color: @color-theme-light;
         border-radius: 50%;
         position: relative;
         height: @footer-height + 10px;
